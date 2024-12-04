@@ -1,0 +1,26 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDEX"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="699*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="ocean" HorizontalAlignment="Left" Margin="52,102,0,232" Width="100" Source="/Ocean.jpg" Visibility="Hidden"/>
+        <Image x:Name="desert" HorizontalAlignment="Left" Margin="368,102,0,232" Width="100" Source="/Desert.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="forest" HorizontalAlignment="Left" Margin="666,102,0,232" Width="100" Source="/Forest.jpg" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Button Content="Ocean Button" HorizontalAlignment="Left" Margin="59,217,0,0" VerticalAlignment="Top" Height="40" Width="86" Click="Button_Click"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Margin="42,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Margin="358,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button2" Content="Desert Button" HorizontalAlignment="Left" Margin="371,213,0,0" VerticalAlignment="Top" Height="38" Width="90"/>
+        <Button Content="Forest Button" HorizontalAlignment="Left" Margin="671,213,0,0" VerticalAlignment="Top" Height="38" Width="90" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+        <TextBox x:Name="text2_Copy" HorizontalAlignment="Left" Margin="358,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="656,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
