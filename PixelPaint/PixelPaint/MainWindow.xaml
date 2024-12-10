@@ -195,6 +195,10 @@
             </Rectangle.Fill>
         </Rectangle>
         <Button x:Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Margin="363,12,0,0" VerticalAlignment="Top" Height="27" Width="70"/>
+        <Button x:Name="top" Content="Top" HorizontalAlignment="Left" Margin="327,395,0,0" VerticalAlignment="Top" Height="32" Width="71"/>
+        <Button x:Name="bottom" HorizontalAlignment="Left" Margin="410,395,0,0" VerticalAlignment="Top" Height="32" Width="72" Content="Bottom"/>
+        <Button x:Name="Left" Content="Left" HorizontalAlignment="Left" Margin="242,395,0,0" VerticalAlignment="Top" Height="32" Width="72"/>
+        <Button x:Name="right" Content="right" HorizontalAlignment="Left" Height="32" Margin="497,395,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

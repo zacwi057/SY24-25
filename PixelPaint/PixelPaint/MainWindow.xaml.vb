@@ -1,4 +1,7 @@
-﻿Class MainWindow
+﻿Imports System.Reflection
+Imports System.Runtime.InteropServices.ComTypes
+
+Class MainWindow
     Private Sub Fill1_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles Fill1.MouseDown, Fill2.MouseDown, Fill3.MouseDown, Fill3.MouseDown, Fill4.MouseDown, Fill5.MouseDown, Fill6.MouseDown, Fill7.MouseDown, Fill8.MouseDown, fill9.MouseDown, Fill10.MouseDown, Fill11.MouseDown, Fill12.MouseDown, Fill13.MouseDown, Fill14.MouseDown, Fill15.MouseDown, Fill16.MouseDown
         Brush1.Fill = sender.fill
     End Sub
@@ -36,4 +39,31 @@
         Return Nothing
     End Function
 
+    Private Sub top_Click(sender As Object, e As RoutedEventArgs) Handles top.Click
+        For index = 0 To 49
+            getRect(index).Fill = Brush1.Fill
+        Next
+    End Sub
+
+    Private Sub bottom_Click(sender As Object, e As RoutedEventArgs) Handles bottom.Click
+        For index = 50 To 99
+            getRect(index).Fill = Brush1.Fill
+        Next
+    End Sub
+
+    Private Sub Left_Click(sender As Object, e As RoutedEventArgs) Handles Left.Click
+        For row = 0 To 9
+            For col = 0 To 4
+                getRect(row * 10 + col).Fill = Brush1.Fill
+            Next
+        Next
+    End Sub
+
+    Private Sub right_Click(sender As Object, e As RoutedEventArgs) Handles right.Click
+        For row = 0 To 9
+            For col = 5 To 9
+                getRect(row * 10 + col).Fill = Brush1.Fill
+            Next
+        Next
+    End Sub
 End Class
