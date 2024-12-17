@@ -40,7 +40,7 @@ Class MainWindow
     End Function
 
     Private Sub top_Click(sender As Object, e As RoutedEventArgs) Handles top.Click
-        For index = 0 To 49
+        For index = 0 To 49 Gyatt
             getRect(index).Fill = Brush1.Fill
         Next
     End Sub

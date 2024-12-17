@@ -200,7 +200,7 @@
         <Button x:Name="Left" Content="Left" HorizontalAlignment="Left" Margin="242,395,0,0" VerticalAlignment="Top" Height="32" Width="72"/>
         <Button x:Name="right" Content="right" HorizontalAlignment="Left" Height="32" Margin="497,395,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="Rows" Content="Rows" HorizontalAlignment="Left" Margin="164,395,0,0" VerticalAlignment="Top" Height="33" Width="69" Click="Button_Click"/>
-        <Button x:Name="Collums" Content="Collums" HorizontalAlignment="Left" Margin="589,395,0,0" VerticalAlignment="Top" Height="33" Width="71"/>
+        <Button x:Name="Collumns" Content="Collumns" HorizontalAlignment="Left" Margin="589,395,0,0" VerticalAlignment="Top" Height="33" Width="71"/>
         <Button Content="Diagonal" HorizontalAlignment="Left" Margin="184,16,0,0" VerticalAlignment="Top" Height="28" Width="64" Click="Button_Click_1"/>
         <Button Content="Lower right" HorizontalAlignment="Left" Margin="256,17,0,0" VerticalAlignment="Top" Height="31" Width="58" Click="Button_Click_2"/>
 
