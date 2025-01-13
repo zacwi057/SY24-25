@@ -40,7 +40,7 @@ Class MainWindow
     End Function
 
     Private Sub top_Click(sender As Object, e As RoutedEventArgs) Handles top.Click
-        For index = 0 To 49 Gyatt
+        For index = 0 To 49
             getRect(index).Fill = Brush1.Fill
         Next
     End Sub
@@ -75,7 +75,7 @@ Class MainWindow
         Next
     End Sub
 
-    Private Sub Collums_Click(sender As Object, e As RoutedEventArgs) Handles Collums.Click
+    Private Sub Collums_Click(sender As Object, e As RoutedEventArgs) Handles Collumns.Click
         For row = 0 To 9
             For col = 0 To 9 Step 2
                 getRect(row * 10 + col).Fill = Brush1.Fill
